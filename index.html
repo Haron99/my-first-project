@@ -4,6 +4,7 @@
 <head>
 	<title>My first project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<!-- Подключаем шрифты и стили -->
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -21,7 +22,12 @@
 
 <body>
 	<div class="header">
-		<h2 class="nov-3">KINOGO</h2>
+		<div class="header_wrapper">
+			<div class="logo">
+				<a href="#"><h2 class="nov-3">KINOGO</h2></a>
+			</div>
+			<div class="date" id="date"></div>
+		</div>
 	</div>
 	<div class="container sh-1  ">
 		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey ">
@@ -207,7 +213,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.js" defer></script>
+	<script src="js/learn.js"></script>
+	<script src="js/app.js"></script>
 </body>
 
 </html>
