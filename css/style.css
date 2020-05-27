@@ -1,0 +1,202 @@
+/*
+*  Shift + Alt + F
+*/
+
+:root {
+  --main-color: #000;
+  --second-main-color: #fff;
+  --third-main-color: #A8A8A8;
+}
+
+html,
+body {
+  width: auto;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+.btn-red {
+  color: var(--second-main-color);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+body {
+  background-image: url('../img/stark.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--main-color);
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.col-A8 {
+  color: var(--third-main-color);
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.col-2 {
+  flex-direction: column;
+  width: 18.6%;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.p-5 {
+  padding-left: 15px;
+  padding-top: 12px;
+}
+
+.mt-7 {
+  margin-top: 3%;
+  margin-left: -13%;
+  Font-size: 13px
+}
+
+.mt-20 {
+  margin-top: 20%;
+}
+
+.col-2 img {
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid;
+  color: var(--third-main-color);
+}
+
+.bor-10 {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: var(--main-color);
+}
+
+.col-30 {
+  width: 39%;
+  height: auto;
+}
+
+.bg-grey {
+  background-color: #585858;
+}
+
+.menu {
+  color: var(--second-main-color);
+}
+
+
+.col-6 {
+  width: 50%;
+  height: auto;
+}
+
+.col-70 {
+  width: 70%;
+  height: auto;
+}
+
+.bg-dark {
+  background-color: #2b2b2b;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.btn {
+  border: 2px solid var(--main-color);
+  background-color: var(--second-main-color);
+  color: var(--main-color);
+  height: 25px;
+  width: 100%;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.default:hover {
+  background: var(--third-main-color);
+}
+
+.mg-left {
+  margin-left: 9px;
+}
+
+ul {
+  padding: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.catalog hr {
+  display: inline-block;
+  width: 90px;
+}
+
+p {
+  margin: 0;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.nov-1 {
+  height: 174px;
+  width: 118px;
+}
+
+.nov-2 {
+  text-align: left;
+}
+
+.nov-3 {
+  color: var(--second-main-color);
+}
+
+.nov-4 {
+  height: auto;
+  width: 100%;
+}
+
+.nov-5 {
+  color: var(--third-main-color);
+}
+
+.nov-6 {
+  height: auto;
+  width: 65%;
+}
+
+.nov-7 {
+  margin-bottom: 30px !important;
+}
+
+.nov-8 {
+  color: var(--second-main-color);
+}
+
+.nov-9 {
+  padding-left: 6px;
+  padding-top: 40px;
+}
