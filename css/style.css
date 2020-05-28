@@ -24,6 +24,11 @@ body {
   width: 100%;
 }
 
+.video{
+  width:370px;
+  right:75px;
+}
+
 body {
   background-image: url('../img/stark.jpg');
   background-repeat: no-repeat;
