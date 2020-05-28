@@ -66,6 +66,14 @@
     padding-top: unset !important;
   }
 
+  .mt-7 {
+    margin: 0 !important;
+  }
+
+  .description {
+    width: 100%;
+  }
+
   .row {
     display: flex !important;
     flex-direction: column !important;

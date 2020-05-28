@@ -1,45 +1,24 @@
-let formerPrimeMinister = 'Hilary Clinton';
-let famousSinger = 'Johnny \'Man in Black\' Cash';
 
-// This is a simple comment
-const PI = 3.14;
 
-let a = 15,
-    b = 24,
-    c = a / b;
+const storesDatePlaceholder = document.getElementById('date');
 
-let array2 = [
-    ['James Brown', '2541-3213', 33243242],
-    ['James Brown2', '2541-3213', 33243242]
-];
+setInterval( function(){
+    // Инициализируем объект Date и делаем доступным
+    // из переменной date
+    let date = new Date();
 
-let array = [
-    //    0              1          2
-    'James Brown', '2541-3213', 33243242
-];
+    // Обращаемся к методам объекта,
+    // собирая все в переменные
+    // -- переменные перезаписываются ежесекундно 
+    let dateHours = date.getHours();
+    let dateMinutes = date.getMinutes();
+    let dateSeconds = date.getSeconds();
 
-//onsole.log( array );
-console.log(array2[0][0] + ' ' + array2[0][2]);
+    // Проверяем секунды на < 10,
+    // чтобы добавить 0 впереди
+    if(dateSeconds < 10)
+        dateSeconds = "0" + dateSeconds;
 
-/*
- * dsafdasfafdafdfa
- * ddgdgsfsfgsgsdfgsg
- */
-
-//console.log(typeof famousSinger);
-
-let personObject = {
-    // Свойство объекта 
-    name: 'Martin',
-    surname: 'Smith',
-    age: 24,
-    course: 'Web design and Development'
-};
-
-console.log(
-    personObject.name +
-    ' ' +
-    personObject.surname
-);
-
-console.log(personObject);
+    // Обновляем содержимое блока новыми велечинами    
+    storesDatePlaceholder.innerHTML = "Текущее время: " + dateHours + ":" + dateMinutes + ":" + dateSeconds;
+}, 1000 );
