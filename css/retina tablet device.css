@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px) {
+
+    .mg-left {
+        margin-left: 0px !important;
+    }
+
+    .col-30 {
+        width: 30% !important;
+        height: auto !important;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: auto;
+    }
+
+    .nov-25 {
+        display: none !important;
+    }
+
+    .mg-left {
+        margin-left: 35px !important;
+    }
+
+    .col-2 {
+        flex-direction: column;
+        width: 18.6%;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    .nov-24 {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .mt-7 {
+        margin-top: 3%;
+        margin-left: 3%;
+        font-size: 13px;
+    }
+
+}
