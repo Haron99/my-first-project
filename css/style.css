@@ -61,6 +61,12 @@ a {
   align-items: center;
 }
 
+#chk,
+.main_nav,
+.nav-container {
+  display: none;
+}
+
 .btn-red {
   color: var(--second-main-color);
   text-align: center;
