@@ -36,22 +36,36 @@
 					<h2 class="nov-3">KINOGO</h2>
 				</a>
 			</div>
+			<div class="nov-11">
+				<form>
+					<input type="search" name="q" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти">
+				</form>
+			</div>
 			<div class="date" id="date"></div>
 		</div>
 
 		<ul class="main_nav">
 			<li class="nav_item">
-				<a href="#">tesr</a>
+				<a href="#">Премьеры</a>
 			</li>
-			<li class="nav_item">Portfolio</li>
-			<li class="nav_item">Test</li>
-			<li class="nav_item">test</li>
-			<li class="nav_item">test</li>
+			<li class="nav_item">
+				<a href="#">Сериалы</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Комедии</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Фэнтези</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Аниме</a>
+			</li>
 		</ul>
 
 	</div>
-	<div class="container sh-1 ">
-		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey ">
+	<div class="container sh-1">
+		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey polaroid">
 			<div class="col-2">
 				<img src="img/1.jpg" class="nov-1 nov-11">
 			</div>
@@ -234,12 +248,17 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="disclaimer_wrapper" id="disclaimer_wrapper">
+		<span>Этот сайт собирает куки файлы для сбора статистики</span>
+		<button id="cookie" onclick="setDiclaimer('agree', 'true', 365)">Согласен</button>
+	</div>
+
 	<script>
 		function myFunction(x) {
 			x.classList.toggle("change");
 		}
 	</script>
-	<script src="js/learn.js"></script>
 	<script src="js/app.js"></script>
 </body>
 

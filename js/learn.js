@@ -43,3 +43,120 @@ console.log(
 );
 
 console.log(personObject);
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+let userName = document.getElementById('bar1');
+let navItems = document.getElementsByClassName('nav_item');
+
+let i;
+for (i = 0; i < navItems.length; i++) {
+
+    if (navItems[i].innerHTML === 'tesr') {
+        navItems[i].style.display = 'none';
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// WebStorm
+
+class House {
+    constructor(color, height, doors, windows) {
+        this.houseColor = color;
+        this.houseHeight = height;
+        this.houseDoors = doors;
+        this.houseWindows = windows;
+    }
+    getHouseColor() {
+        return this.houseColor;
+    }
+    setHouseColor(newColor) {
+        this.houseColor = newColor;
+    }
+    getFullInfo() {
+        return this.houseColor + " " + this.houseHeight + " " + this.houseDoors + " " + this.houseWindows;
+    }
+}
+
+let myHouse = new House('red', 180, 2, 5);
+myHouse.setHouseColor('blue');
+
+let myVillageHouse = new House('brown', 30, 4, 9);
+
+//console.log( myHouse.getFullInfo() );
+//console.log( myVillageHouse.getFullInfo() );
+
+let houseCollection = [myHouse, myVillageHouse];
+
+let i;
+for (i = 0; i < houseCollection.length; i++) {
+    console.log(houseCollection[i].getFullInfo());
+
+    if (houseCollection[i].getHouseColor() === 'blue') {
+        console.log('Нашел синий!');
+    }
+}
+
+
+
+
+
+
+/*
+<input type="text" id="username" placeholder="Username">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+<input type="submit" value="Submit" id="submit">
+  
+  
+class User {
+  constructor(userName, email, password) {
+    this.userName = userName;
+    this.userEmail = email;
+    this.userPassword = password;
+  }
+  setUserName(newUserName) {
+    this.userName = newUserName;
+  }
+  setUserEmail(newUserEmail) {
+    this.userEmail = newUserEmail;
+  }
+  setUserPassword(newUserPassword) {
+    this.userPassword = newUserPassword;
+  }
+}
+
+let userStorage = [];
+let submitHolder = document.getElementById('submit');
+
+submitHolder.addEventListener('click', function() {
+  let userNameHolder = document.getElementById('username').value;
+  let userEmailHolder = document.getElementById('email').value;
+  let userPasswordHolder = document.getElementById('password').value;
+  
+  let user = new User(userNameHolder, userEmailHolder, userPasswordHolder);
+  userStorage.push(user);
+  console.log(userStorage.length);
+});
+
+  */
