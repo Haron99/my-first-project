@@ -55,7 +55,7 @@ a {
 .header_wrapper {
   width: 70%;
   margin: 0 auto;
-  color: #fff;
+  color: var(--second-main-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -249,10 +249,29 @@ p {
   position: fixed;
   right: 0;
   bottom: 0;
-  color: #fff;
+  color: var(--second-main-color);
   background: #000;
   width: 100%;
   height: 40px;
   text-align: center;
   line-height: 40px;
+}
+
+.bot-navigation {
+  clear: both;
+  font-size: 12px;
+  padding: 15px 20px;
+  border-top: 1px solid #404040;
+  color: var(--second-main-color);
+  position: relative;
+  height: 15px;
+}
+
+.bot-navigation a:link,
+.bot-navigation a:visited {
+  text-decoration: none;
+  border: 1px solid #4d4c4c;
+  padding: 3px 6px;
+  background: #242424;
+  color: #7e7d7d;
 }
