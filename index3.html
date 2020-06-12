@@ -4,33 +4,68 @@
 <head>
 	<title>My first project</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<!-- Подключаем шрифты и стили -->
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/res.tbl.css">
 	<link rel="stylesheet" href="css/res.ret.css">
+	<!--  
+		Семантические теги HTML:
 
+		<header></header>
+		<nav></nav>
+		<article></article>
+		<aside></aside>
+		<footer></footer>
+	-->
 </head>
 
 <body>
 	<div class="header">
+		<input type="checkbox" id="chk">
+		<label for="chk" class="nav-container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</label>
+
 		<div class="header_wrapper">
 			<div class="logo">
-				<a href="index.html">
+				<a href="#">
 					<h2 class="nov-3">KINOGO</h2>
 				</a>
 			</div>
 			<div class="nov-11">
 				<form>
-					<input type="search" name="q" placeholder="Поиск по сайту">
-					<input type="submit" value="Найти">
+					<input type="search" id="searche" name="q" placeholder="Поиск по сайту">
+					<input type="submit" id="submite" value="Найти">
 				</form>
 			</div>
 			<div class="date" id="date"></div>
 		</div>
+
+		<ul class="main_nav">
+			<li class="nav_item">
+				<a href="#">Премьеры</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Сериалы</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Комедии</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Фэнтези</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Аниме</a>
+			</li>
+		</ul>
+
 	</div>
 	<div class="container sh-1">
-		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey">
+		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey polaroid">
 			<div class="col-2">
 				<img src="img/1.jpg" class="nov-1 nov-11">
 			</div>
@@ -38,10 +73,10 @@
 				<img src="img/2.jpg" class="nov-1 nov-11">
 			</div>
 			<div class="col-2">
-				<img src="img/3.jpg" class="nov-1">
+				<img src="img/3.jpg" class="nov-1 nov-20">
 			</div>
 			<div class="col-2">
-				<img src="img/4.jpg" class="nov-1">
+				<img src="img/4.jpg" class="nov-1 nov-20">
 			</div>
 			<div class="col-2">
 				<img src="img/5.jpg" class="nov-1 nov-11">
@@ -50,10 +85,10 @@
 				<img src="img/6.jpg" class="nov-1 nov-11">
 			</div>
 		</div>
-		<div class="row polaroid">
-			<div class="col-30 bg-grey bor-10 p-5 menu ">
+		<div class="row bor-10 sh-1 polaroid">
+			<div class="col-30 bg-grey p-5 menu ">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-6 nov-2">
 						<ul>
 							<h4>Категории</h4>
 							<ins>
@@ -86,7 +121,7 @@
 						</ul>
 					</div>
 					<div class="col-6 nov-11">
-						<ul>
+						<ul class="catalog">
 							<h4>По году</h4>
 							<ins>
 								<li>2016 года</li>
@@ -115,7 +150,7 @@
 				<h4>Также смотрите</h4>
 				<hr>
 				<div class="row mg-left">
-					<div class="col-6 nov-11">
+					<div class="col-6">
 						<img src="img/10.jpg" class="nov-1">
 						<p><ins>Веном</ins></p>
 						<img src="img/30.jpg" class="nov-1">
@@ -123,7 +158,7 @@
 						<img src="img/50.jpg" class="nov-1">
 						<p><ins>Конченная</ins></p>
 					</div>
-					<div class="col-6 mg-left nov-25">
+					<div class="col-6 mg-left nov-11 nov-25 ">
 						<img src="img/20.jpg" class="nov-1">
 						<p><ins>Гарри Поттер</ins></p>
 						<img src="img/40.jpg" class="nov-1">
@@ -133,59 +168,52 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-70 p-5 menu bor-10 bg-dark">
-				<div class="row nov-7">
-					<div class="col-6">
-						<h4>Аладдин (2019)</h4>
-						<img src="img/aladin.jpg" class="nov-6 nov-24">
-					</div>
-					<div class="col-6 mt-7 col-black">
-						<p class="nov-5">Сюжет фильма "Аладдин" разворачивается в загадочном городе под названием Аграба.
+			<div class="col-70 p-5 menu bg-dark">
+					<div class="col-7 col-black p-5 col-A8">
+						<p id="test">Сюжет фильма "Аладдин" разворачивается в загадочном городе под названием Аграба.
 							Там живёт главный герой, которого зовут Аладдин. Он местный воришка и просто
 							пытается выжить в этом трудном мире. И вот ему удаётся познакомится с девушкой
 							по имени Жасмин. Оказывается, что она дочка самого короля, от которого она решила
 							сбежать. В итоге их поймали вместе и теперь главному герою грозит смертельная
 							опасность. Но вдруг к нему обращается старик, который заявляет, что есть пещера
-							с сокровищами и если он поможет ему их достать, то
-						</p>
+							с сокровищами и если он поможет ему их достать, то</p>
 						<br>
-						<p class="nov-5">Название: Аладдин</p>
-						<p class="nov-5">Год выпуска: <ins class="nov-8">2019</ins></p>
-						<p class="nov-5">Страна:<ins class="nov-8">США</ins></p>
-						<p class="nov-5">Жанр:<ins class="nov-8"> Приключения</ins>/<ins class="nov-8">Фантастика</ins>/<ins
-								class="nov-8">2019 года</ins></p>
-						<p class="nov-5">Продолжительность: 114 мин. / 01:54</p>
+						<p>Название: Аладдин</p>
+						<p>Год выпуска: <ins class="nov-3">2019</ins></p>
+						<p>Страна:<ins class="nov-3">США</ins></p>
+						<p>Жанр:<ins class="nov-3"> Приключения</ins>/<ins class="nov-3">Комедии</ins>/<ins
+								class="nov-3">Семейные</ins>/<ins class="nov-3">Фантастика</ins>/<ins class="nov-3">2015
+								года</ins>/<ins class="nov-3">Российские</ins></p>
+						<p>Продолжительность: 114 мин. / 01:54</p>
 						<p>Премьера: 23 мая 2019</p>
 					</div>
-				</div>
-				<div class="row mt-100 pd-vd">
-					<video width="625" controls>
-						<source src="video/avakuac.mp4" type="video/mp4">
-						<source src="video/avakuac.mp4" type="video/ogg">
-						Your browser does not support HTML5 video.
-					</video>
-				</div>
-				<div class="row ">
-					<div class="mt-12 pd-001">
-						<img src="img/1.jpg" class="nov-1 nov-9 nov-11">
-					</div>
-					<div class="mt-12 pd-001">
-						<img src="img/2.jpg" class="nov-1 nov-9 nov-11">
-					</div>
-					<div class="mt-12 pd-001">
-						<img src="img/3.jpg" class="nov-1 nov-9 nov-11">
-					</div>
-					<div class="mt-12 pd-001">
-						<img src="img/4.jpg" class="nov-1 nov-9 nov-11 nov-10">
-					</div>
-					<div class="mt-12 pd-001 nov-25">
-						<img src="img/5.jpg" class="nov-1 nov-9 nov-11 nov-10">
+					<div class="bot-navigation" align="center">
+						<a href="index.html">1</a>
+						<a href="index2.html">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/learn.js"></script>
+
+	<div class="disclaimer_wrapper" id="disclaimer_wrapper">
+		<span>Этот сайт собирает куки файлы для сбора статистики</span>
+		<button id="cookie" onclick="setDiclaimer('agree', 'true', 365)">Согласен</button>
+	</div>
+
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
 	<script src="js/app.js"></script>
 </body>
 
