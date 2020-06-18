@@ -265,6 +265,7 @@ p {
   color: var(--second-main-color);
   position: relative;
   height: 15px;
+  text-align: center;
 }
 
 .bot-navigation a:link,
