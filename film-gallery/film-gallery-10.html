@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My first project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<!-- Подключаем шрифты и стили -->
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/res.tbl.css">
+	<link rel="stylesheet" href="../css/res.ret.css">
+	<!--  
+		Семантические теги HTML:
+
+		<header></header>
+		<nav></nav>
+		<article></article>
+		<aside></aside>
+		<footer></footer>
+	-->
+</head>
+
+<body>
+	<div class="header">
+		<input type="checkbox" id="chk">
+		<label for="chk" class="nav-container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</label>
+
+		<div class="header_wrapper">
+			<div class="logo">
+				<a href="#">
+					<h2 class="nov-3">KINOGO</h2>
+				</a>
+			</div>
+			<div class="nov-11">
+				<form>
+					<input type="search" name="q" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти">
+				</form>
+			</div>
+			<div class="date" id="date"></div>
+		</div>
+
+		<ul class="main_nav">
+			<li class="nav_item">
+				<a href="#">Премьеры</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Сериалы</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Комедии</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Фэнтези</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Аниме</a>
+			</li>
+		</ul>
+
+	</div>
+	<div class="container sh-1">
+		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey polaroid">
+			<div class="col-2">
+				<a href="../movie_collection/tobol.html"><img src="../img/1.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/parfim.html"><img src="../img/2.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/mstiteli.html"><img src="../img/3.jpg" class="nov-1 nov-20"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/capitan-marvel.html"><img src="../img/4.jpg" class="nov-1 nov-20"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/strela.html"><img src="../img/5.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/it-2.html"><img src="../img/6.jpg" class="nov-1 nov-11"></a>
+			</div>
+		</div>
+		<div class="row bor-10 sh-1 polaroid">
+			<div class="col-30 bg-grey p-5 menu ">
+				<div class="row">
+					<div class="col-6 nov-2">
+						<ul>
+							<h4>Категории</h4>
+							<ins>
+								<a href="#">
+									<li>Премьеры</li>
+								</a>
+								<a href="#">
+									<li>Биографии</li>
+								</a>
+								<a href="#">
+									<li>Боевики</li>
+								</a>
+								<a href="#">
+									<li>Вестерны</li>
+								</a>
+								<a href="#">
+									<li>Военые</li>
+								</a>
+								<a href="#">
+									<li>Детективы</li>
+								</a>
+								<a href="#">
+									<li>Детские</li>
+								</a>
+								<a href="#">
+									<li>Документ</li>
+								</a>
+								<a href="#">
+									<li>Драмы</li>
+								</a>
+								<a href="#">
+									<li>Исторические</li>
+								</a>
+								<a href="#">
+									<li>Комедии</li>
+								</a>
+								<a href="#">
+									<li>Криминал</li>
+								</a>
+								<a href="#">
+									<li>Мелодраммы</li>
+								</a>
+								<a href="#">
+									<li>Мультфильмы</li>
+								</a>
+								<a href="#">
+									<li>Мюзиклы</li>
+								</a>
+								<a href="#">
+									<li>Отечественые</li>
+								</a>
+								<a href="#">
+									<li>Приключения</li>
+								</a>
+								<a href="#">
+									<li>Семейные</li>
+								</a>
+								<a href="#">
+									<li>Спортивные</li>
+								</a>
+								<a href="#">
+									<li>Трилеры</li>
+								</a>
+								<a href="#">
+									<li>Ужасы</li>
+								</a>
+								<a href="#">
+									<li>Фантастика</li>
+								</a>
+								<a href="#">
+									<li>Фэнтези</li>
+								</a>
+								<a href="#">
+									<li>Фильмы в HD</li>
+								</a>
+								<a href="#">
+									<li>Мобильная версия</li>
+								</a>
+							</ins>
+						</ul>
+					</div>
+					<div class="col-6 nov-11">
+						<ul class="catalog">
+							<h4>По году</h4>
+							<ins>
+								<a href="#">
+									<li>2016 года</li>
+								</a>
+								<a href="#">
+									<li>2017 года</li>
+								</a>
+								<a href="#">
+									<li>2018 года</li>
+								</a>
+								<a href="#">
+									<li>2019 года</li>
+								</a>
+								<hr>
+								<h4>По странам</h4>
+								<a href="#">
+									<li>Амерканские</li>
+								</a>
+								<a href="#">
+									<li>Британские</li>
+								</a>
+								<a href="#">
+									<li>Российские</li>
+								</a>
+								<a href="#">
+									<li>Индийские</li>
+								</a>
+								<a href="#">
+									<li>Немецкие</li>
+								</a>
+								<a href="#">
+									<li>Французкие</li>
+								</a>
+								<hr>
+								<h4>Сериалы</h4>
+								<a href="#">
+									<li>Русские</li>
+									<a href="#">
+										<li>Зарубежные</li>
+										<a href="#">
+											<li>Турецкие</li>
+											<a href="#">
+												<li>Все сериалы</li>
+											</a>
+							</ins>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<h4>Также смотрите</h4>
+				<hr>
+				<div class="row mg-left">
+					<div class="col-6">
+						<a href="../movie_collection/venom.html"><img src="../img/10.jpg" class="nov-1"></a>
+						<a href="../movie_collection/venom.html">
+							<p><ins>Веном</ins></p>
+						</a>
+						<a href="../movie_collection/blad-shot.html"><img src="../img/30.jpg" class="nov-1"></a>
+						<a href="../movie_collection/blad-shot.html">
+							<p><ins>Блад Шот</ins></p>
+						</a>
+						<a href="../movie_collection/konchennaj.html"><img src="../img/50.jpg" class="nov-1"></a>
+						<a href="../movie_collection/konchennaj.html">
+							<p><ins>Конченная</ins></p>
+						</a>
+					</div>
+					<div class="col-6 mg-left nov-11 nov-25 ">
+						<a href="../movie_collection/garri-poter.html"><img src="../img/20.jpg" class="nov-1"></a>
+						<a href="../movie_collection/garri-poter.html">
+							<p><ins>Гарри Поттер</ins></p>
+						</a>
+						<a href="../movie_collection/tor-ragnarek.html"><img src="../img/40.jpg" class="nov-1"></a>
+						<a href="../movie_collection/tor-ragnarek.html">
+							<p><ins>Тор:Рагнарёк</ins></p>
+						</a>
+						<a href="../movie_collection/dostat-noji.html"><img src="../img/60.jpg" class="nov-1"></a>
+						<a href="../movie_collection/dostat-noji.html">
+							<p><ins>Достать ножи</ins></p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-70 p-5 menu bg-dark">
+
+				<div class="row p-5">
+					<a href="../movie_collection/begushij-v-laberinte.html">
+						<h4>Бегущий в лабиринте (2014)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/begushij-v-laberinte.html"><img src="../img/begushij-v-laberinte.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/begushij-v-laberinte.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>Большинство людей проживает спокойную и в меру предсказуемую жизнь, в которой бывают
+							горе и радость, но зато нет места фантастике. Томас относится к другой группе людей –
+							тех, с кем происходят невероятные события, способные коренным образом изменить
+							мировоззрение любого, даже самого закоренелого скептика. Однажды он очнулся на платформе
+							лифта, не помня ничего, кроме собственного имени, а когда лифт поднялся, и над Томасом
+							открылись двери люка, для него началась новая жизнь. Жизнь, в которой он и другие
+							подростки общим</p>
+						<br>
+						<p>Название: Бегущий в лабиринте</p>
+						<p>Год выпуска: <ins class="nov-3">2014</ins></p>
+						<p>Страна:<ins class="nov-3">США,Великобритания</ins></p>
+						<p>Жанр:<ins class="nov-3"> Триллер</ins>/<ins class="nov-3"> Боевик</ins></p>
+						<p>Продолжительность: 01:53:00</p>
+					</div>
+				</div>
+				<div class="row p-5">
+					<a href="../movie_collection/kollektor.html">
+						<h4>Коллектор (2016)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/kollektor.html"><img src="../img/kollektor.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/kollektor.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>Артур — знаток своего дела. Работая лишь с большими должниками, он находит всю их подноготную
+							и эффективно использует против их. Он никогда не склоняется к очевидным способам, его конек
+							— психологическая атака. Артур может мастерски перевоплощаться, сбивать с толку, выводить из
+							баланса, и так докучать собственных клиентов, что они готовы вернуть все, лишь бы никогда
+							больше не слышать его голос. Но однажды Артур сам делается мишенью: в сети возникает
+							скандальное видео с его ролью, и от него мгновенно отворачиваются товарищий
+						</p>
+						<br>
+						<p>Название: Коллектор</p>
+						<p>Год выпуска: <ins class="nov-3;">2016</ins></p>
+						<p>Страна:<ins class="nov-3">Россия</ins></p>
+						<p>Жанр:<ins class="nov-3"> Драма</ins></p>
+						<p>Перевод: Дублированный</p>
+						<p>Продолжительность:01:14:00</p>
+						<p>Премьера :2 июля 2016</p>
+					</div>
+				</div>
+				<div class="row p-5">
+					<a href="../movie_collection/otpetii-naparniki.html">
+						<h4>Отпетые напарники (2016)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/otpetii-naparniki.html"><img src="../img/otpetii-naparniki.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/otpetii-naparniki.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>Саманта, крестница правдивого полицейского Бенни, попадает в проблемы и оказывается в
+							руках у преступного синдиката. Во главе данной преступной группировки стоит человек,
+							за коим Бенни смотрел около 10 лет. Чтоб спасти Саманту, копу необходимо поймать
+							американского шулера и поменять его на девушку.</p>
+						<br>
+						<p>Название: Отпетые напарники</p>
+						<p>Год выпуска: <ins class="nov-3">2016</ins></p>
+						<p>Страна:<ins class="nov-3">Китай, Гонконг, США</ins></p>
+						<p>Жанр:<ins class="nov-3"> Комедия</ins></p>
+						<p>Продолжительность: 01:47:00</p>
+						<p>Премьера: 17 июля 2016</p>
+					</div>
+				</div>
+				<div class="bot-navigation" align="center">
+					<a href="../index.html">1</a>
+					<a href="film-gallery-2.html">2</a>
+					<a href="film-gallery-3.html">3</a>
+					<a href="film-gallery-4.html">4</a>
+					<a href="film-gallery-5.html">5</a>
+					<a href="film-gallery-6.html">6</a>
+					<a href="film-gallery-7.html">7</a>
+					<a href="film-gallery-8.html">8</a>
+					<a href="film-gallery-9.html">9</a>
+					<a href="film-gallery-10.html">10</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="disclaimer_wrapper" id="disclaimer_wrapper">
+		<span>Этот сайт собирает куки файлы для сбора статистики</span>
+		<button id="cookie" onclick="setDiclaimer('agree', 'true', 365)">Согласен</button>
+	</div>
+
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+	<script src="../js/app.js"></script>
+</body>
+
+</html>

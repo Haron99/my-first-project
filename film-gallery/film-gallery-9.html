@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My first project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<!-- Подключаем шрифты и стили -->
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/res.tbl.css">
+	<link rel="stylesheet" href="../css/res.ret.css">
+	<!--  
+		Семантические теги HTML:
+
+		<header></header>
+		<nav></nav>
+		<article></article>
+		<aside></aside>
+		<footer></footer>
+	-->
+</head>
+
+<body>
+	<div class="header">
+		<input type="checkbox" id="chk">
+		<label for="chk" class="nav-container" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</label>
+
+		<div class="header_wrapper">
+			<div class="logo">
+				<a href="#">
+					<h2 class="nov-3">KINOGO</h2>
+				</a>
+			</div>
+			<div class="nov-11">
+				<form>
+					<input type="search" name="q" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти">
+				</form>
+			</div>
+			<div class="date" id="date"></div>
+		</div>
+
+		<ul class="main_nav">
+			<li class="nav_item">
+				<a href="#">Премьеры</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Сериалы</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Комедии</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Фэнтези</a>
+			</li>
+			<li class="nav_item">
+				<a href="#">Аниме</a>
+			</li>
+		</ul>
+
+	</div>
+	<div class="container sh-1">
+		<div class="row p-5 mt-20 mb-50 bor-10 bg-grey polaroid">
+			<div class="col-2">
+				<a href="../movie_collection/tobol.html"><img src="../img/1.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/parfim.html"><img src="../img/2.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/mstiteli.html"><img src="../img/3.jpg" class="nov-1 nov-20"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/capitan-marvel.html"><img src="../img/4.jpg" class="nov-1 nov-20"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/strela.html"><img src="../img/5.jpg" class="nov-1 nov-11"></a>
+			</div>
+			<div class="col-2">
+				<a href="../movie_collection/it-2.html"><img src="../img/6.jpg" class="nov-1 nov-11"></a>
+			</div>
+		</div>
+		<div class="row bor-10 sh-1 polaroid">
+			<div class="col-30 bg-grey p-5 menu ">
+				<div class="row">
+					<div class="col-6 nov-2">
+						<ul>
+							<h4>Категории</h4>
+							<ins>
+								<a href="#">
+									<li>Премьеры</li>
+								</a>
+								<a href="#">
+									<li>Биографии</li>
+								</a>
+								<a href="#">
+									<li>Боевики</li>
+								</a>
+								<a href="#">
+									<li>Вестерны</li>
+								</a>
+								<a href="#">
+									<li>Военые</li>
+								</a>
+								<a href="#">
+									<li>Детективы</li>
+								</a>
+								<a href="#">
+									<li>Детские</li>
+								</a>
+								<a href="#">
+									<li>Документ</li>
+								</a>
+								<a href="#">
+									<li>Драмы</li>
+								</a>
+								<a href="#">
+									<li>Исторические</li>
+								</a>
+								<a href="#">
+									<li>Комедии</li>
+								</a>
+								<a href="#">
+									<li>Криминал</li>
+								</a>
+								<a href="#">
+									<li>Мелодраммы</li>
+								</a>
+								<a href="#">
+									<li>Мультфильмы</li>
+								</a>
+								<a href="#">
+									<li>Мюзиклы</li>
+								</a>
+								<a href="#">
+									<li>Отечественые</li>
+								</a>
+								<a href="#">
+									<li>Приключения</li>
+								</a>
+								<a href="#">
+									<li>Семейные</li>
+								</a>
+								<a href="#">
+									<li>Спортивные</li>
+								</a>
+								<a href="#">
+									<li>Трилеры</li>
+								</a>
+								<a href="#">
+									<li>Ужасы</li>
+								</a>
+								<a href="#">
+									<li>Фантастика</li>
+								</a>
+								<a href="#">
+									<li>Фэнтези</li>
+								</a>
+								<a href="#">
+									<li>Фильмы в HD</li>
+								</a>
+								<a href="#">
+									<li>Мобильная версия</li>
+								</a>
+							</ins>
+						</ul>
+					</div>
+					<div class="col-6 nov-11">
+						<ul class="catalog">
+							<h4>По году</h4>
+							<ins>
+								<a href="#">
+									<li>2016 года</li>
+								</a>
+								<a href="#">
+									<li>2017 года</li>
+								</a>
+								<a href="#">
+									<li>2018 года</li>
+								</a>
+								<a href="#">
+									<li>2019 года</li>
+								</a>
+								<hr>
+								<h4>По странам</h4>
+								<a href="#">
+									<li>Амерканские</li>
+								</a>
+								<a href="#">
+									<li>Британские</li>
+								</a>
+								<a href="#">
+									<li>Российские</li>
+								</a>
+								<a href="#">
+									<li>Индийские</li>
+								</a>
+								<a href="#">
+									<li>Немецкие</li>
+								</a>
+								<a href="#">
+									<li>Французкие</li>
+								</a>
+								<hr>
+								<h4>Сериалы</h4>
+								<a href="#">
+									<li>Русские</li>
+									<a href="#">
+										<li>Зарубежные</li>
+										<a href="#">
+											<li>Турецкие</li>
+											<a href="#">
+												<li>Все сериалы</li>
+											</a>
+							</ins>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<h4>Также смотрите</h4>
+				<hr>
+				<div class="row mg-left">
+					<div class="col-6">
+						<a href="../movie_collection/venom.html"><img src="../img/10.jpg" class="nov-1"></a>
+						<a href="../movie_collection/venom.html">
+							<p><ins>Веном</ins></p>
+						</a>
+						<a href="../movie_collection/blad-shot.html"><img src="../img/30.jpg" class="nov-1"></a>
+						<a href="../movie_collection/blad-shot.html">
+							<p><ins>Блад Шот</ins></p>
+						</a>
+						<a href="../movie_collection/konchennaj.html"><img src="../img/50.jpg" class="nov-1"></a>
+						<a href="../movie_collection/konchennaj.html">
+							<p><ins>Конченная</ins></p>
+						</a>
+					</div>
+					<div class="col-6 mg-left nov-11 nov-25 ">
+						<a href="../movie_collection/garri-poter.html"><img src="../img/20.jpg" class="nov-1"></a>
+						<a href="../movie_collection/garri-poter.html">
+							<p><ins>Гарри Поттер</ins></p>
+						</a>
+						<a href="../movie_collection/tor-ragnarek.html"><img src="../img/40.jpg" class="nov-1"></a>
+						<a href="../movie_collection/tor-ragnarek.html">
+							<p><ins>Тор:Рагнарёк</ins></p>
+						</a>
+						<a href="../movie_collection/dostat-noji.html"><img src="../img/60.jpg" class="nov-1"></a>
+						<a href="../movie_collection/dostat-noji.html">
+							<p><ins>Достать ножи</ins></p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-70 p-5 menu bg-dark">
+
+				<div class="row p-5">
+					<a href="../movie_collection/odin+odin.html">
+						<h4>1+1 (2011)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/odin+odin.html"><img src="../img/odin+odin.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/odin+odin.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>В сюжете комедийной драмы «1+1 или Неприкасаемые» богатый аристократ Филипп всегда
+							вел скучную, распланированную по неделям жизнь, соблюдал правила этикета и
+							хорошего тона, чтобы в обществе никто не подумал ничего дурного. Но большое
+							состояние отнюдь не делает его счастливым, он чувствует себя одиноко и тоскливо,
+							а после несчастного случая, в результате которого Филипп стал парализованным
+							инвалидом, его интерес к жизни и вовсе пропал. Для ухода за собой Филипп
+							нанимает сиделок, но никто не задерживается в его доме надолго. </p>
+						<br>
+						<p>Название: 1+1</p>
+						<p>Год выпуска: <ins class="nov-3">2011</ins></p>
+						<p>Страна:<ins class="nov-3">Франция</ins></p>
+						<p>Жанр:<ins class="nov-3"> комедия</ins>/<ins class="nov-3">драма</ins></p>
+						<p>Продолжительность: 112 мин. / 01:52</p>
+					</div>
+				</div>
+				<div class="row p-5">
+					<a href="../movie_collection/pogryjenie.html">
+						<h4>Погружение (2017)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/pogryjenie.html"><img src="../img/pogryjenie.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/pogryjenie.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>Он - офицер разведки, она - ученый-океанолог. Ему предстояла смертельно опасная
+							спецоперация в Сомали, ей - глубоководная экспедиция. И теперь, в минуту испытаний
+							пред лицом смерти - в плену у боевиков, в батискафе на глубине океана -
+							все, что у них есть, - это их любовь...
+						</p>
+						<br>
+						<p>Название: Погружение</p>
+						<p>Год выпуска: <ins class="nov-3;">2017</ins></p>
+						<p>Страна:<ins class="nov-3">США</ins></p>
+						<p>Жанр:<ins class="nov-3"> Триллер</ins>/<ins class="nov-3">Мелодрама</ins>/<ins
+								class="nov-3">Драма</ins></p>
+						<p>Перевод: Дублированный</p>
+						<p>Продолжительность:112 мин. / 01:52</p>
+						<p>Премьера :10 сентября 2017</p>
+					</div>
+				</div>
+				<div class="row p-5">
+					<a href="../movie_collection/tochka-ne-vozvrata.html">
+						<h4>Точка невозврата (2018)</h4>
+					</a>
+				</div>
+				<div class="row">
+					<div class="col-3 p-5">
+						<a href="../movie_collection/tochka-ne-vozvrata.html"><img src="../img/tochka-ne-vozvrata.jpg"
+								class="nov-4 nov-24"></a>
+						<a href="../movie_collection/tochka-ne-vozvrata.html" class="btn-red">Смотреть онлайн</a>
+					</div>
+					<div class="col-7 col-black p-5 col-A8">
+						<p>Сюжет киноленты построен на двух эпизодах из жизни Мэйсона Скайлза –
+							бывшего американского дипломата, работавшего в Ливане в представительстве
+							США в разгар вспыхнувшей там гражданской войны. Столицу и её окрестности
+							охватили массовые беспорядки, на фоне которых до предела обострились
+							отношения между Ливаном и Штатами. В Бейруте прокатилась волна протестов.
+							Работники американского посольства подверглись нападениям со стороны
+							местного населения, считавшего правительство США виновником возникших
+							проблем. Пострадала и семья
+						</p>
+						<br>
+						<p>Название: Точка невозврата</p>
+						<p>Год выпуска: <ins class="nov-3">2018</ins></p>
+						<p>Страна:<ins class="nov-3">США</ins></p>
+						<p>Жанр:<ins class="nov-3"> Триллер</ins>/<ins class="nov-3"> Драма</ins></p>
+						<p>Продолжительность: 109 мин. / 01:49</p>
+						<p>Премьера: 22 января 2018</p>
+					</div>
+				</div>
+				<div class="bot-navigation" align="center">
+					<a href="../index.html">1</a>
+					<a href="film-gallery-2.html">2</a>
+					<a href="film-gallery-3.html">3</a>
+					<a href="film-gallery-4.html">4</a>
+					<a href="film-gallery-5.html">5</a>
+					<a href="film-gallery-6.html">6</a>
+					<a href="film-gallery-7.html">7</a>
+					<a href="film-gallery-8.html">8</a>
+					<a href="film-gallery-9.html">9</a>
+					<a href="film-gallery-10.html">10</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="disclaimer_wrapper" id="disclaimer_wrapper">
+		<span>Этот сайт собирает куки файлы для сбора статистики</span>
+		<button id="cookie" onclick="setDiclaimer('agree', 'true', 365)">Согласен</button>
+	</div>
+
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+		}
+	</script>
+	<script src="../js/app.js"></script>
+</body>
+
+</html>
